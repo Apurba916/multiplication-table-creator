@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(){
+    int n;
+    printf("Print a number whose multiplication table you want.\n");
+    scanf("%d", &n);
+    int multiplier;
+    printf("Enter the number of times you want to print the multiplication table.\n");
+    scanf("%d", &multiplier);
+    for (int i = multiplier; i >= 0; i--)
+    {
+        printf("%d X %d = %d \n", n, i, n*i);
+    }
+    
+    return 0;
+}
